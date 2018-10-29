@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="IE-Edge">
+	
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico">
+
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- animate css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700i|Teko:700|Yanone+Kaffeesatz|Open+Sans:700" rel="stylesheet">
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/smooth-scroll.css">
+
+	<title>Capstone 1 | News</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html"><img src="assets/images/owtitle.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="heroes.html">HEROES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="news.html">NEWS</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ABOUT
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="contacts.html">Contact</a>
+          <a class="dropdown-item" href="gallery.html">Gallery</a>
+<!--           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="about.html">About</a> -->
+        </div>
+      </li>
+        <li>
+      	<div id="disclaimer">
+      		<a href="#" title="DISCLAIMER" data-toggle="popover" data-trigger="focus" data-content="The information contained in this website is for general information purposes only. The information is provided by playoverwatch.com and while we endeavour to keep the information up to date and correct, we make no representations or warranties of any kind.">
+      			<img src="assets/images/disclaimer.png"> DISCLAIMER
+      		</a>
+      	</div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <img id="usericon" src="assets/images/usericon.png">
+			<a id="username" href="#">Gastronome</a>	
+      <button class="btn btn-buynow my-2 my-sm-0" type="submit">BUY NOW</button>
+    </form>
+  </div>
+</nav>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">BACK TO TOP</button>
+
+<div class="newspage container-fluid">
+	<div id="newsheader">OVERWATCH NEWS</div>
+
+	<div class="row news-thumb-container">
+
+		<div class="news-thumb col-lg-3 col-md-3 col-sm" id="news-busan">
+			<div class="news-thumb-empty"></div>
+			<div class="news-thumb-text">
+				<span class="thumb-header">
+					[NOW LIVE] BUSAN
+				</span>
+				<span class="thumb-sub">New control map!</span>
+			</div>
+		</div>
+
+		<div class="news-thumb col-lg-3 col-md-3 col-sm" id="news-figma">
+			<div class="news-thumb-empty"></div>
+			<div class="news-thumb-text">
+				<span class="thumb-header">
+					FIGMA ZENYATTA
+				</span class="thumb-sub">
+				<span class="thumb-sub">Pre-order now!</span>
+			</div>
+		</div>
+
+		<div class="news-thumb col-lg-6 col-md-6 col-sm" id="news-halloween">
+			<div class="news-thumb-empty"></div>
+			<div class="news-thumb-text">
+				<span class="thumb-header">
+					OVERWATCH HALLOWEEN TERROR 2018
+				</span>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="row news-thumb-container">
+
+		<div class="news-thumb col-lg-6 col-md-3 col-sm" id="news-lootbox">
+			<div class="news-thumb-empty"></div>
+			<div class="news-thumb-text">
+				<span class="thumb-header">
+					OPEN A GOLDEN LOOTBOX
+				</span>
+				<span class="thumb-sub">Subscribe with Twitch Prime</span>
+			</div>
+		</div>
+
+		<div class="news-thumb col-lg-3 col-md-3 col-sm" id="news-animated">
+			<div class="news-thumb-empty"></div>
+			<div class="news-thumb-text">
+				<span class="thumb-header">
+					ANIMATED SHORT "SHOOTING STAR"
+				</span>
+			</div>
+		</div>
+
+		<div class="news-thumb col-lg-3 col-md-6 col-sm" id="news-payload">
+			<div class="news-thumb-empty"></div>
+			<div class="news-thumb-text">
+				<span class="thumb-header">
+					OVERWATCH PAYLOAD TOUR
+				</span>
+				<span class="thumb-sub">Group up with us at NYCC</span>
+			</div>
+		</div>
+
+	</div>	<!-- END OF THUMBS -->
+
+
+	<div class="container-fluid" id="main">
+		<div class="row" id="main-row">
+			<div class="col-lg-8 col-md-8 col-sm">
+
+				<div class="newspost">
+					<div class="newstitle">OVERWATCH WORLD CUP: TOP 8 PREVIEW</div>
+					<div class="newssub">10/24/2018 | By <a href="#">Blizzard Entertainment</a> | <a href="">32 Comments</a></div>
+					<div class="newsmain clear">
+						<div class="newsimagecontainer"><img src="assets/images/news-owl.jpg" class="newsimage"></div>
+						<div class="newstext"><p>From Incheon to Los Angeles, Bangkok to Paris, the Overwatch World Cup is nearing its thrilling finale. Next weekend at BlizzCon, the Top 8 qualifying teams from the four Group Stages will battle it out for a chance to take home a gold medal.</p>
+
+						<p>Get ready for all the action at BlizzCon with our handy guide below, including match times, updated team rosters, and matchups!</p></div>
+					</div>
+				</div>	
+				<div class="newspost">
+					<div class="newstitle">HEALING STREAM ENGAGED: BCRF DONATIONS</div>
+					<div class="newssub">3:10 AM | <a href="#">Blogger, Images, Tag</a> | <a href="">21 Comments</a></div>
+					<div class="newsmain clear">
+						<div class="newsimagecontainer"><img src="assets/images/news-bcrf.jpg" class="newsimage"></div>
+						<div class="newstext">Earlier this year we sold our first charity skin: PINK MERCY. This limited-time exclusive skin and accompanying themed apparel were created in partnership with the Breast Cancer Research Foundation to support our family and friends that have been impacted by this disease. Thanks to all of you, we were able to raise $12.7 million—the largest donation made by a corporate partner in a single year within BCRF’s 25-year history. October marks Breast Cancer Awareness Month and, in the spirit of transparency, the Breast Cancer Research Foundation has graciously shared some insights on how the funds raised are being used to support research into understanding, preventing, and treating breast cancer.</div>
+					</div>
+				</div>	
+				<div class="newspost">
+					<div class="newstitle">GET THE BLIZZCON 2018 GOODY BAG</div>
+					<div class="newssub">09/27/2018 | By <a href="#">Blizzard Entertainment</a> | <a href="">18 Comments</a></div>
+					<div class="newsmain clear">
+						<div class="newsimagecontainer"><img src="assets/images/news-goodybag.jpg" class="newsimage"></div>
+						<div class="newstext">BlizzCon® season is upon us, and whether you’re attending the show in person or tuning in to the news and excitement online, we want you to have access to the full experience. Starting today, you can pre-purchase a BlizzCon Goody Bag through the Blizzard Gear Store and have it shipped directly to your home in time to celebrate the show. Claim yours while supplies last!</div>
+					</div>
+				</div>	
+
+			</div>
+
+			<div class="col-lg-4 col-md-4 col" id="side">
+
+				<div class="sidesearchbar"><input type="text" name="" id="searchbar" placeholder="Search..."></div>
+				<div id="recentnews">RECENT NEWS</div>
+
+				<div class="sidespost clear">
+					<div class="sidespost-img">
+						<img src="assets/images/news-blizzcon.jpg">
+					</div>
+					<div class="sidespost-text">
+						Attend BlizzCon Opening Week In Person! Tickets On Sale Now
+						<span class="sidespost-sub">2 Days Ago</span>
+					</div>
+				</div>
+				<div class="sidespost clear">
+					<div class="sidespost-img">
+						<img src="assets/images/news-championship.jpg">
+					</div>
+					<div class="sidespost-text">
+						No Easy Path to the WCS Global Championship
+						<span class="sidespost-sub">3 Days Ago</span>
+					</div>
+				</div>
+				<div class="sidespost clear">
+					<div class="sidespost-img">
+						<img src="assets/images/news-dnd.jpg">
+					</div>
+					<div class="sidespost-text">
+						Delve into Dungeon Mastery with Matt Mercer
+						<span class="sidespost-sub">09/29/2018</span>
+					</div>
+				</div>
+
+				<div class="sidelinkscontainer">
+					<div class="sidelinksheader"><span id="sidelinksheadertitle">OTHER NEWS</span></div>
+					<div class="sidelinks"><img src="assets/images/arrow.png"><a href="#">Patch Notes 10/01/2018</a></div>
+					<div class="sidelinks"><img src="assets/images/arrow.png"><a href="#">Upcoming Content for Lootbox</a></div>
+					<div class="sidelinks"><img src="assets/images/arrow.png"><a href="#">Help us test on PTR</a></div>
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+	<div id="footer" class="container-fluid">
+		<span id="stayconnected">STAY CONNECTED</span>
+		<div class="footer-link"><a href="https://www.facebook.com/OverwatchSEA/?brand_redir=292929874198161" target="_blank"><img class="footer-link-img" src="assets/images/facebook.png"></a></div>
+		<div class="footer-link"><a href="https://twitter.com/PlayOverwatch" target="_blank"><img class="footer-link-img" src="assets/images/twitter.png"></a></div>
+		<div class="footer-link"><a href="https://www.youtube.com/channel/UClOf1XXinvZsy4wKPAkro2A" target="_blank"><img class="footer-link-img" src="assets/images/youtube.png"></a> </div>
+		<div class="footer-link"><a href="https://www.instagram.com/playoverwatch/?hl=en" target="_blank"><img class="footer-link-img" src="assets/images/instagram.png"></a></div>
+
+		<div id="footer-link2">
+			<a class="link2" href="#">CAREERS</a>|
+			<a class="link2" href="#">ABOUT</a>|
+			<a class="link2" href="#">SUPPORT</a>|
+			<a class="link2" href="#">CONTACT US</a>|
+			<a class="link2" href="#">PRESS</a>|
+			<a class="link2" href="#">API</a>
+		</div>
+
+	</div>
+
+
+<!-- jquery first then popper then bootstrap js -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- custom js -->
+<script src="assets/js/myjs.js"></script>
+
+</body>
+</html>

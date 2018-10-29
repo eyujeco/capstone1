@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="IE-Edge">
+	
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico">
+
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- animate css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed:700i|Teko:700|Yanone+Kaffeesatz|Open+Sans:700" rel="stylesheet">
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/smooth-scroll.css">
+
+	<title>Capstone 1 | News</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html"><img src="assets/images/owtitle.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="heroes.html">HEROES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news.html">NEWS</a>
+      </li>
+
+	<li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ABOUT
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="contacts.html">Contact</a>
+          <a class="dropdown-item" href="gallery.html">Gallery</a>
+<!--           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="about.html">About</a> -->
+        </div>
+      </li>
+        <li>
+      	<div id="disclaimer">
+      		<a href="#" title="DISCLAIMER" data-toggle="popover" data-trigger="focus" data-content="The information contained in this website is for general information purposes only. The information is provided by playoverwatch.com and while we endeavour to keep the information up to date and correct, we make no representations or warranties of any kind.">
+      			<img src="assets/images/disclaimer.png"> DISCLAIMER
+      		</a>
+      	</div>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <img id="usericon" src="assets/images/usericon.png">
+			<a id="username" href="#">Gastronome</a>	
+      <button class="btn btn-buynow my-2 my-sm-0" type="submit">BUY NOW</button>
+    </form>
+  </div>
+</nav>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">BACK TO TOP</button>
+
+<div class="contact-main container-fluid">
+	<div class="row contact-container">
+		<div class="col-lg-6 offset-lg-1 col-md-8 col-sm">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.2510884970893!2d121.05500451567049!3d14.58476338137259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c815ec1c52e7%3A0x49e80caaf287652b!2sSM+Megamall!5e0!3m2!1sfil!2sph!4v1540429215635" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-sm">
+			<ul class="list-group">
+			  <li class="list-group-item contact-list">
+			  		<img src="assets/images/contacts-name.png">
+			  		Erika Mae P. Yu Jeco
+			  </li>
+			  <li class="list-group-item contact-list">
+			  		<img src="assets/images/contacts-email.png">
+			  		yujeco.erikamae@gmail.com
+			  </li>
+			  <li class="list-group-item contact-list">
+			  		<img src="assets/images/contacts-landline.png">
+			  		280 - 1234
+			  </li>
+			  <li class="list-group-item contact-list">
+			  		<img src="assets/images/contacts-cellphone.png">
+			  		<small>Globe</small> 0956 012 3456 | <small>Sun</small> 0942 789 0123
+			  </li>
+			  <li class="list-group-item contact-list">
+			  		<img src="assets/images/contacts-address.png">
+			  		123 Apitong Street, Marikina Heights, Marikina City
+			  </li>
+			</ul>
+
+		</div>
+
+	</div>
+</div>
+
+
+
+	<div id="footer" class="container-fluid">
+		<span id="stayconnected">STAY CONNECTED</span>
+		<div class="footer-link"><a href="https://www.facebook.com/OverwatchSEA/?brand_redir=292929874198161" target="_blank"><img class="footer-link-img" src="assets/images/facebook.png"></a></div>
+		<div class="footer-link"><a href="https://twitter.com/PlayOverwatch" target="_blank"><img class="footer-link-img" src="assets/images/twitter.png"></a></div>
+		<div class="footer-link"><a href="https://www.youtube.com/channel/UClOf1XXinvZsy4wKPAkro2A" target="_blank"><img class="footer-link-img" src="assets/images/youtube.png"></a> </div>
+		<div class="footer-link"><a href="https://www.instagram.com/playoverwatch/?hl=en" target="_blank"><img class="footer-link-img" src="assets/images/instagram.png"></a></div>
+
+		<div id="footer-link2">
+			<a class="link2" href="#">CAREERS</a>|
+			<a class="link2" href="#">ABOUT</a>|
+			<a class="link2" href="#">SUPPORT</a>|
+			<a class="link2" href="#">CONTACT US</a>|
+			<a class="link2" href="#">PRESS</a>|
+			<a class="link2" href="#">API</a>
+		</div>
+
+	</div>
+
+
+<!-- jquery first then popper then bootstrap js -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- custom js -->
+<script src="assets/js/myjs.js"></script>
+
+</body>
+</html>

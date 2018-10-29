@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="IE-Edge">
+	
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico">
+
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- animate css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700i|Teko:700|Yanone+Kaffeesatz|Open+Sans:700" rel="stylesheet">
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<title>Capstone 1 | Heroes</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html"><img src="assets/images/owtitle.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="heroes.html">HEROES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news.html">NEWS</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ABOUT
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="contacts.html">Contact</a>
+          <a class="dropdown-item" href="gallery.html">Gallery</a>
+<!--           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="about.html">About</a> -->
+        </div>
+      </li>
+        <li>
+      	<div id="disclaimer">
+      		<a href="#" title="DISCLAIMER" data-toggle="popover" data-trigger="focus" data-content="The information contained in this website is for general information purposes only. The information is provided by playoverwatch.com and while we endeavour to keep the information up to date and correct, we make no representations or warranties of any kind.">
+      			<img src="assets/images/disclaimer.png"> DISCLAIMER
+      		</a>
+      	</div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <img id="usericon" src="assets/images/usericon.png">
+			<a id="username" href="#">Gastronome</a>	
+      <button class="btn btn-buynow my-2 my-sm-0" type="submit">BUY NOW</button>
+    </form>
+  </div>
+</nav>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">BACK TO TOP</button>
+
+
+<div class="heroes-main container-fluid">
+	<span id="heroes-title">CHOOSE YOUR FIGHTER</span>
+		
+		<div class="row" id="hero-divs-container">
+			
+			<div class="col-lg-6 col-md-5">
+				
+				<div id="class-nav">
+					<a class="hero-classifier" href="#tank">TANK</a>
+					<a class="hero-classifier" href="#damage">DAMAGE</a>
+					<a class="hero-classifier" href="#support">SUPPORT</a>
+				</div>
+
+
+
+				<div id="icons-classified" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+				  <h4 id="tank">TANK</h4>
+				  			
+				 	<a href="#panel-dva"><div class="icon" id="hero-dva"><img class="icon-img" src="assets/images/icon-dva.png"></div></a>
+				 	<a href="#panel-orisa"><div class="icon" id="hero-orisa"><img class="icon-img" src="assets/images/icon-orisa.png"></div></a>
+				 	<a href="#panel-reinhardt"><div class="icon" id="hero-reinhardt"><img class="icon-img" src="assets/images/icon-reinhardt.png"></div></a>	
+				 	<a href="#panel-roadhog"><div class="icon" id="hero-roadhog"><img class="icon-img" src="assets/images/icon-roadhog.png"></div></a>	
+				 	<a href="#panel-winston"><div class="icon" id="hero-winston"><img class="icon-img" src="assets/images/icon-winston.png"></div></a>		
+				 	<a href="#panel-zarya"><div class="icon" id="hero-zarya"><img class="icon-img" src="assets/images/icon-zarya.png"></div></a>	
+				 	
+				  <h4 id="damage">DAMAGE</h4>
+				  
+				  	<a href="#panel-bastion"><div class="icon" id="hero-bastion"><img class="icon-img" src="assets/images/icon-bastion.png"></div></a>
+				  	<a href="#panel-doomfist"><div class="icon" id="hero-doomfist"><img class="icon-img" src="assets/images/icon-doomfist.png"></div></a>
+				  	<a href="#panel-genji"><div class="icon" id="hero-genji"><img class="icon-img" src="assets/images/icon-genji.png"></div></a>
+				  	<a href="#panel-hanzo"><div class="icon" id="hero-hanzo"><img class="icon-img" src="assets/images/icon-hanzo.png"></div></a>
+				  	<a href="#panel-junkrat"><div class="icon" id="hero-junkrat"><img class="icon-img" src="assets/images/icon-junkrat.png"></div></a>
+				  	<a href="#panel-mccree"><div class="icon" id="hero-mccree"><img class="icon-img" src="assets/images/icon-mccree.png"></div></a>
+				  	<a href="#panel-mei"><div class="icon" id="hero-mei"><img class="icon-img" src="assets/images/icon-mei.png"></div></a>
+				  	<a href="#panel-pharah"><div class="icon" id="hero-pharah"><img class="icon-img" src="assets/images/icon-pharah.png"></div></a>
+				  	<a href="#panel-reaper"><div class="icon" id="hero-reaper"><img class="icon-img" src="assets/images/icon-reaper.png"></div></a>
+				  	<a href="#panel-76"><div class="icon" id="hero-76"><img class="icon-img" src="assets/images/icon-76.png"></div></a>
+				  	<a href="#panel-sombra"><div class="icon" id="hero-sombra"><img class="icon-img" src="assets/images/icon-sombra.png"></div></a>
+				  	<a href="#panel-symmetra"><div class="icon" id="hero-symmetra"><img class="icon-img" src="assets/images/icon-symmetra.png"></div></a>
+				  	<a href="#panel-torb"><div class="icon" id="hero-torb"><img class="icon-img" src="assets/images/icon-torb.png"></div></a>
+				  	<a href="#panel-tracer"><div class="icon" id="hero-tracer"><img class="icon-img" src="assets/images/icon-tracer.png"></div></a>
+				  	<a href="#panel-widow"><div class="icon" id="hero-widow"><img class="icon-img" src="assets/images/icon-widow.png"></div></a>
+				 
+				  <h4 id="support">SUPPORT</h4>
+				  
+				  	<a href="#panel-ana"><div class="icon" id="hero-ana"><img class="icon-img" src="assets/images/icon-ana.png"></div></a>
+				  	<a href="#panel-brigitte"><div class="icon" id="hero-brigitte"><img class="icon-img" src="assets/images/icon-brigitte.png"></div></a>
+				  	<a href="#panel-lucio"><div class="icon" id="hero-lucio"><img class="icon-img" src="assets/images/icon-lucio.png"></div></a>
+				  	<a href="#panel-mercy"><div class="icon" id="hero-mercy"><img class="icon-img" src="assets/images/icon-mercy.png"></div></a>
+				  	<a href="#panel-moira"><div class="icon" id="hero-moira"><img class="icon-img" src="assets/images/icon-moira.png"></div></a>
+				  	<a href="#panel-zen"><div class="icon" id="hero-zen"><img class="icon-img" src="assets/images/icon-zen.png"></div></a>
+							  		
+				</div>
+
+			</div>	
+
+
+			<div class="hero-full-div col-lg-6 col-md-7">
+				
+				<div class="hero-info" id="panel-dva">
+					<img class="hero-full-img" src="assets/images/full-dva.png">
+					<div class="hero-name-container">
+						<span class="hero-name">D.VA</span>
+						<div class="hero-role"><img src="assets/images/icon-tank.png" class="desc-icon"><p class="ml-4">TANK</p></div>
+						<div class="hero-description">
+						D.Va’s mech is nimble and powerful—its twin Fusion Cannons blast away with autofire at short range, and she can use its Boosters to barrel over enemies and obstacles, or deflect attacks with her projectile-dismantling Defense Matrix.
+					</div>
+					</div>
+				</div>
+
+				<div class="hero-info" id="panel-reinhardt">
+					<img class="hero-full-img" src="assets/images/full-reinhardt.png">
+					<div class="hero-name-container">
+						<span class="hero-name">REINHARDT</span>
+						<div class="hero-role"><img src="assets/images/icon-tank.png" class="desc-icon"><p class="ml-4">TANK</p></div>
+						<div class="hero-description">
+						Clad in powered armor and swinging his hammer, Reinhardt leads a rocket-propelled charge across the battleground and defends his squadmates with a massive energy barrier.
+					</div>
+					</div>
+				</div>
+
+				<div class="hero-info" id="panel-winston">
+					<img class="hero-full-img" src="assets/images/full-winston.png">
+					<div class="hero-name-container">
+						<span class="hero-name">WINSTON</span>
+						<div class="hero-role"><img src="assets/images/icon-tank.png" class="desc-icon"><p class="ml-4">TANK</p></div>
+						<div class="hero-description">
+						Clad in powered armor and swinging his hammer, Reinhardt leads a rocket-propelled charge across the battleground and defends his squadmates with a massive energy barrier.
+					</div>
+					</div>
+				</div>
+
+				<div class="hero-info" id="panel-bastion">
+					<img class="hero-full-img" src="assets/images/full-bastion.png">
+					<div class="hero-name-container">
+						<span class="hero-name">BASTION</span>
+						<div class="hero-role"><img src="assets/images/icon-damage.png" class="desc-icon"><p class="ml-4">DAMAGE</p></div>
+						<div class="hero-description">
+						Repair protocols and the ability to transform between stationary Assault, mobile Recon and devastating Tank configurations provide Bastion with a high probability of victory.
+					</div>
+					</div>
+				</div>
+
+				<div class="hero-info" id="panel-genji">
+					<img class="hero-full-img" src="assets/images/full-genji.png">
+					<div class="hero-name-container">
+						<span class="hero-name">GENJI</span>
+						<div class="hero-role"><img src="assets/images/icon-damage.png" class="desc-icon"><p class="ml-4">DAMAGE</p></div>
+						<div class="hero-description">
+						Genji flings precise and deadly Shuriken at his targets, and uses his technologically-advanced katana to deflect projectiles or deliver a Swift Strike that cuts down enemies.
+					</div>
+					</div>
+				</div>
+
+				<div class="hero-info" id="panel-mccree">
+					<img class="hero-full-img" src="assets/images/full-mccree.png">
+					<div class="hero-name-container">
+						<span class="hero-name">McCREE</span>
+						<div class="hero-role"><img src="assets/images/icon-damage.png" class="desc-icon"><p class="ml-4">DAMAGE</p></div>
+						<div class="hero-description">
+						Armed with his Peacekeeper revolver, McCree takes out targets with deadeye precision and dives out of danger with eagle-like speed.
+					</div>
+					</div>
+				</div>
+				
+				<div class="hero-info" id="panel-pharah">
+					<img class="hero-full-img" src="assets/images/full-pharah.png">
+					<div class="hero-name-container">
+						<span class="hero-name">PHARAH</span>
+						<div class="hero-role"><img src="assets/images/icon-damage.png" class="desc-icon"><p class="ml-4">DAMAGE</p></div>
+						<div class="hero-description">
+						Soaring through the air in her combat armor, and armed with a launcher that lays down high-explosive rockets, Pharah is a force to be reckoned with.
+					</div>
+					</div>
+				</div>
+
+				<div class="hero-info" id="panel-reaper">
+					<img class="hero-full-img" src="assets/images/full-reaper.png">
+					<div class="hero-name-container">
+						<span class="hero-name">REAPER</span>
+						<div class="hero-role"><img src="assets/images/icon-damage.png" class="desc-icon"><p class="ml-4">DAMAGE</p></div>
+						<div class="hero-description">
+						Hellfire Shotguns, the ghostly ability to become immune to damage, and the power to step between shadows make Reaper one of the deadliest beings on Earth.
+					</div>
+					</div>
+				</div>
+
+				<div class="hero-info" id="panel-76">
+					<img class="hero-full-img" src="assets/images/full-76.png">
+					<div class="hero-name-container">
+						<span class="hero-name">SOLDIER: 76</span>
+						<div class="hero-role"><img src="assets/images/icon-damage.png" class="desc-icon"><p class="ml-4">DAMAGE</p></div>
+						<div class="hero-description">
+						Armed with cutting-edge weaponry, including an experimental pulse rifle that’s capable of firing spirals of high-powered Helix Rockets, Soldier: 76 has the speed and support know-how of a highly trained warrior.
+					</div>
+					</div>
+				</div>		
+
+				<div class="hero-info" id="panel-ana">
+					<img class="hero-full-img" src="assets/images/full-ana.png">
+					<div class="hero-name-container">
+						<span class="hero-name">ANA</span>
+						<div class="hero-role"><img src="assets/images/icon-support.png" class="desc-icon"><p class="ml-4">SUPPORT</p></div>
+						<div class="hero-description">
+						Ana’s versatile arsenal allows her to affect heroes all over the battlefield. Her Biotic Rifle rounds and Biotic Grenades heal allies and damage or impair enemies; her sidearm tranquilizes key targets, and Nano Boost gives one of her comrades a considerable increase in power.
+					</div>
+					</div>
+				</div>
+
+				<div class="hero-info" id="panel-brigitte">
+					<img class="hero-full-img" src="assets/images/full-brigitte.png">
+					<div class="hero-name-container">
+						<span class="hero-name">BRIGITTE</span>
+						<div class="hero-role"><img src="assets/images/icon-support.png" class="desc-icon"><p class="ml-4">SUPPORT</p></div>
+						<div class="hero-description">
+						Brigitte specializes in armor. She can throw Repair Packs to heal teammates, or automatically heal nearby allies when she damages foes with her Flail. Her Flail is capable of a wide swing to strike multiple targets, or a Whip Shot that stuns an enemy at range. When entering the fray, Barrier Shield provides personal defense while she attacks enemies with Shield Bash. Brigitte’s ultimate ability, Rally, gives her a substantial short-term boost of speed and provides long-lasting armor to all her nearby allies.
+					</div>
+					</div>
+				</div>
+
+				<div class="hero-info" id="panel-mercy">
+					<img class="hero-full-img" src="assets/images/full-mercy.png">
+					<div class="hero-name-container">
+						<span class="hero-name">MERCY</span>
+						<div class="hero-role"><img src="assets/images/icon-support.png" class="desc-icon"><p class="ml-4">SUPPORT</p></div>
+						<div class="hero-description">
+						Mercy’s Valkyrie Suit helps keep her close to teammates like a guardian angel; healing, resurrecting or strengthening them with the beams emanating from her Caduceus Staff.
+					</div>
+					</div>
+				</div>
+
+				<div class="hero-info" id="panel-zen">
+					<img class="hero-full-img" src="assets/images/full-zen.png">
+					<div class="hero-name-container">
+						<span class="hero-name">ZENYATTA</span>
+						<div class="hero-role"><img src="assets/images/icon-support.png" class="desc-icon"><p class="ml-4">SUPPORT</p></div>
+						<div class="hero-description">
+						Zenyatta calls upon orbs of harmony and discord to heal his teammates and weaken his opponents, all while pursuing a transcendent state of immunity to damage.
+					</div>
+					</div>
+				</div>
+
+								
+			</div>
+			</div>
+
+		</div>
+		</div>
+
+
+
+
+
+
+	<div id="footer" class="container-fluid">
+		<span id="stayconnected">STAY CONNECTED</span>
+		<div class="footer-link"><a href="https://www.facebook.com/OverwatchSEA/?brand_redir=292929874198161" target="_blank"><img class="footer-link-img" src="assets/images/facebook.png"></a></div>
+		<div class="footer-link"><a href="https://twitter.com/PlayOverwatch" target="_blank"><img class="footer-link-img" src="assets/images/twitter.png"></a></div>
+		<div class="footer-link"><a href="https://www.youtube.com/channel/UClOf1XXinvZsy4wKPAkro2A" target="_blank"><img class="footer-link-img" src="assets/images/youtube.png"></a> </div>
+		<div class="footer-link"><a href="https://www.instagram.com/playoverwatch/?hl=en" target="_blank"><img class="footer-link-img" src="assets/images/instagram.png"></a></div>
+
+		<div id="footer-link2">
+			<a class="link2" href="#">CAREERS</a>|
+			<a class="link2" href="#">ABOUT</a>|
+			<a class="link2" href="#">SUPPORT</a>|
+			<a class="link2" href="#">CONTACT US</a>|
+			<a class="link2" href="#">PRESS</a>|
+			<a class="link2" href="#">API</a>
+		</div>
+
+	</div>
+
+
+<!-- jquery first then popper then bootstrap js -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- custom js -->
+<script src="assets/js/myjs.js"></script>
+
+</body>
+</html>

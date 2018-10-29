@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="IE-Edge">
+	
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico">
+
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- animate css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed:700i|Teko:700|Yanone+Kaffeesatz|Open+Sans:700" rel="stylesheet">
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/smooth-scroll.css">
+
+	<title>Capstone 1 | Gallery</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html"><img src="assets/images/owtitle.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="heroes.html">HEROES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news.html">NEWS</a>
+      </li>
+
+	<li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ABOUT
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="contacts.html">Contact</a>
+          <a class="dropdown-item" href="gallery.html">Gallery</a>
+<!--           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="about.html">ABOUT</a> -->
+        </div>
+      </li>
+        <li>
+      	<div id="disclaimer">
+      		<a href="#" title="DISCLAIMER" data-toggle="popover" data-trigger="focus" data-content="The information contained in this website is for general information purposes only. The information is provided by playoverwatch.com and while we endeavour to keep the information up to date and correct, we make no representations or warranties of any kind.">
+      			<img src="assets/images/disclaimer.png"> DISCLAIMER
+      		</a>
+      	</div>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <img id="usericon" src="assets/images/usericon.png">
+			<a id="username" href="#">Gastronome</a>	
+      <button class="btn btn-buynow my-2 my-sm-0" type="submit">BUY NOW</button>
+    </form>
+  </div>
+</nav>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">BACK TO TOP</button>
+
+<div class="container-fluid contact-container">
+	<div id="galleryheader">GALLERY</div>
+
+	<div class="row gallery-list-row">
+		<div id="gallery-list-container" class="col-lg-3 col-md-3 col-sm-3">
+			<ul class="list-group">
+			  <a href="#row1"><li class="list-group-item gallery-list">OFFICIAL ART</li></a>
+			  <a href="#row2"><li class="list-group-item gallery-list">CINEMATICS</li></a>
+			  <a href="#row3"><li class="list-group-item gallery-list">CONCEPT ART</li></a>
+			  <a href="#row4"><li class="list-group-item gallery-list">EVENTS</li></a>
+			</ul>								
+		</div>
+
+		<div id="gallery-content" class="col-lg-9 col-md-9 col-sm-9">
+			
+			<div id="row1" class="gallery-row clear">
+				<div class="gallery-row-header">OFFICIAL ART</div>
+
+				<div class="card" id="image1" data-toggle="modal" data-target="#modal1-1">
+				  <img class="card-img-top" src="assets/images/carousel3.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <p class="card-text">The Characters</p>
+				  </div>
+				</div>
+
+				<div class="card" id="image1" data-toggle="modal" data-target="#modal1-2">
+				  <img class="card-img-top" src="assets/images/carousel2.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <p class="card-text">Rescue at Petra</p>
+				  </div>
+				</div>
+
+				<div class="card" id="image1" data-toggle="modal" data-target="#modal1-3">
+				  <img class="card-img-top" src="assets/images/carousel1.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <p class="card-text">SOLDIER Line</p>
+				  </div>
+				</div>
+
+			</div>
+
+
+			<div id="row2" class="gallery-row clear">
+				<div class="gallery-row-header">CINEMATICS</div>
+
+				<div class="card" id="image1" data-toggle="modal" data-target="#modal2-1">
+				  <img class="card-img-top" src="assets/images/cinematic1.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <p class="card-text">Cinematic Trailer</p>
+				  </div>
+				</div>
+
+				<div class="card" id="image1" data-toggle="modal" data-target="#modal2-2">
+				  <img class="card-img-top" src="assets/images/cinematic2.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <p class="card-text">Dragons</p>
+				  </div>
+				</div>
+
+				<div class="card" id="image1" data-toggle="modal" data-target="#modal2-3">
+				  <img class="card-img-top" src="assets/images/news-animated.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <p class="card-text">Shooting Star</p>
+				  </div>
+				</div>
+			</div>
+
+			<div id="row3" class="gallery-row clear">
+				<div class="gallery-row-header">CONCEPT ART</div>
+
+				<div class="card" id="image1" data-toggle="modal" data-target="#modal3-1">
+				  <img class="card-img-top" src="assets/images/concept1.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <p class="card-text">Anniversary Concept Art Theory</p>
+				  </div>
+				</div>
+
+				<div class="card" id="image1" data-toggle="modal" data-target="#modal3-2">
+				  <img class="card-img-top" src="assets/images/concept2.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <p class="card-text">Character Animation</p>
+				  </div>
+				</div>
+
+				<div class="card" id="image1" data-toggle="modal" data-target="#modal3-3">
+				  <img class="card-img-top" src="assets/images/concept3.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <p class="card-text">Early Concepts</p>
+				  </div>
+				</div>
+			</div>
+
+			<div id="row4" class="gallery-row clear">
+				<div class="gallery-row-header">EVENTS</div>
+
+				<div class="card" id="image1" data-toggle="modal" data-target="#modal4-1">
+				  <img class="card-img-top" src="assets/images/events1.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <p class="card-text">OWL World Cup</p>
+				  </div>
+				</div>
+
+				<div class="card" id="image1" data-toggle="modal" data-target="#modal4-2">
+				  <img class="card-img-top" src="assets/images/events2.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <p class="card-text">Creative Team Panel</p>
+				  </div>
+				</div>
+
+				<div class="card" id="image1" data-toggle="modal" data-target="#modal4-3">
+				  <img class="card-img-top" src="assets/images/events3.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <p class="card-text">BlizzCon 2019</p>
+				  </div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+
+
+		<div id="modal1-1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">			  	
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">The Characters</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			    	<img class="modal-img" src="assets/images/carousel3.jpg">
+			    </div>
+			  </div>
+		</div>
+
+		<div id="modal1-2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">			  	
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Rescue at Petra</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			    	<img class="modal-img" src="assets/images/carousel2.jpg">
+			    </div>
+			  </div>
+		</div>
+
+		<div id="modal1-3" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">			  	
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">SOLDIER Line</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			    	<img class="modal-img" src="assets/images/carousel1.jpg">
+			    </div>
+			  </div>
+		</div>
+
+		<div id="modal2-1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">			  	
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Cinematic Trailer</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			    	<img class="modal-img" src="assets/images/cinematic1.jpg">
+			    </div>
+			  </div>
+		</div>
+
+		<div id="modal2-2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">			  	
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Dragons</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			    	<img class="modal-img" src="assets/images/cinematic2.jpg">
+			    </div>
+			  </div>
+		</div>
+
+		<div id="modal2-3" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">			  	
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Shooting Star</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			    	<img class="modal-img" src="assets/images/news-animated.jpg">
+			    </div>
+			  </div>
+		</div>
+
+
+
+
+
+
+
+
+	</div>
+</div>
+
+
+
+	<div id="footer" class="container-fluid">
+		<span id="stayconnected">STAY CONNECTED</span>
+		<div class="footer-link"><a href="https://www.facebook.com/OverwatchSEA/?brand_redir=292929874198161" target="_blank"><img class="footer-link-img" src="assets/images/facebook.png"></a></div>
+		<div class="footer-link"><a href="https://twitter.com/PlayOverwatch" target="_blank"><img class="footer-link-img" src="assets/images/twitter.png"></a></div>
+		<div class="footer-link"><a href="https://www.youtube.com/channel/UClOf1XXinvZsy4wKPAkro2A" target="_blank"><img class="footer-link-img" src="assets/images/youtube.png"></a> </div>
+		<div class="footer-link"><a href="https://www.instagram.com/playoverwatch/?hl=en" target="_blank"><img class="footer-link-img" src="assets/images/instagram.png"></a></div>
+
+		<div id="footer-link2">
+			<a class="link2" href="#">CAREERS</a>|
+			<a class="link2" href="#">ABOUT</a>|
+			<a class="link2" href="#">SUPPORT</a>|
+			<a class="link2" href="#">CONTACT US</a>|
+			<a class="link2" href="#">PRESS</a>|
+			<a class="link2" href="#">API</a>
+		</div>
+
+	</div>
+
+
+<!-- jquery first then popper then bootstrap js -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- custom js -->
+<script src="assets/js/myjs.js"></script>
+
+</body>
+</html>
